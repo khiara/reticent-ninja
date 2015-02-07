@@ -1,0 +1,21 @@
+<script>
+var name, greeting;
+	name = prompt("Hello! What's your name?");
+	greeting ="Welcome, " + name + " !";
+alert(greeting);
+var message, question1, guess, secretNumber;
+	secretNumber = 3;
+	question1 = prompt("Do you want to play a game? (yes or no)");
+	if (question1 == "yes") {
+		guess = parseInt(prompt("Great! Guess how many pieces of pizza I'm going to have for dinner. It's between 1 and 12(!)."));
+		  while (guess != secretNumber) {
+			  guess = parseInt(prompt("Nope, guess again!"));
+			}
+		    message = "You guessed it!"	
+	    alert(message)
+} else {
+message = "Oh well, maybe some other time.";
+};
+alert(message);
+
+</script>
